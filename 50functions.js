@@ -40,3 +40,33 @@ function isEven(number){
     }
     return false;
 }
+
+// Make a function named isPositive(number) that returns true if the provided input is a positive number. False for zero or any other number or data type.
+function isPositive(number){
+    if(number>0 && number===!NaN){
+        return true;
+    }
+    return false;
+}
+
+// Make a function named isNegative(number) that returns true if the provided input is a negative number. False for zero or any other number or data type
+function isNegative(number){
+    if(number<0 && number===!NaN){
+        return true;
+    }
+    return false;
+}
+// Make a function named isFive(input)
+function isFive (input){
+    return 5;
+}
+//Make a function named addFive(input) that adds five to some input.
+
+function addFive(input){
+    return input +5;
+}
+
+// Make a function named isVowel(letter)
+function vowelTest(s) {
+    return (/^[aeiou]$/i).test(s);
+}
