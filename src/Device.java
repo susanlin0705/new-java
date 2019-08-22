@@ -1,4 +1,4 @@
-public class Device {
+public class Device  implements TextEditor{
     String type;
     String brand;
     Double price;
@@ -36,5 +36,14 @@ public class Device {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    @Override
+    public String openTextFile(String filename) {
+        if (brand.equalsIgnoreCase("apple")) {
+            return "Opening " + filename + "with Apple";
+        }else{
+            return "Opening " + filename + "with Notepad";
+        }
     }
 }
