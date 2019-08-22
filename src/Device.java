@@ -41,9 +41,11 @@ public class Device  implements TextEditor{
     @Override
     public String openTextFile(String filename) {
         if (brand.equalsIgnoreCase("apple")) {
-            return "Opening " + filename + "with Apple";
+            return "Opening " + filename + " with Apple";
+        }else if (brand.equalsIgnoreCase("window")){
+            return "Opening " + filename + " with Notepad";
         }else{
-            return "Opening " + filename + "with Notepad";
+            return "Opening " +filename + " with" + this.brand;
         }
     }
 }
