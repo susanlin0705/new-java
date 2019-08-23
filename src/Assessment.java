@@ -16,5 +16,12 @@ public class Assessment {
         return a-b;
     }
 
+    public static void main(String[] args) {
+        Device a = new Device("computer", "apple",100.00);
+        System.out.println(a.getBrand());
+        System.out.println(a.openTextFile("jsp.txt"));
+    }
+
+
 
 }
